@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<title>Login Aman</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+  <h1>🔒 Website Aman dengan HTTPS & TLS</h1>
+  <p>Data dikirim melalui protokol TLS terenkripsi.</p>
+</header>
+
+<div class="form-card">
+  <label>Nama:</label>
+  <input type="text" id="nama" placeholder="Masukkan nama Anda">
+
+  <label>Password:</label>
+  <input type="password" id="password" placeholder="Masukkan password">
+
+  <button onclick="masuk()">Kirim</button>
+</div>
+
+<footer>
+  <p>© 2025 HTTPS-TLS-DEMO | Dibuat oleh Putri Sakinah Nasution</p>
+</footer>
+
+<script>
+function masuk() {
+  const nama = document.getElementById("nama").value;
+  const pass = document.getElementById("password").value;
+
+  if (!nama || !pass) {
+    alert("Nama dan Password harus diisi");
+    return;
+  }
+
+  sessionStorage.setItem("nama", nama);
+  window.location.href = "form.html";
+}
+</script>
+
+</body>
+</html>

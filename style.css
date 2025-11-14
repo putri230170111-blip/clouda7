@@ -1,0 +1,66 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #cfeeff;
+  text-align: center;
+}
+
+/* HEADER */
+header {
+  background: #0077cc;
+  color: white;
+  padding: 25px 10px;
+}
+header h1 {
+  margin: 0;
+  font-size: 26px;
+}
+
+/* CARD */
+.form-card {
+  background: white;
+  width: 350px;
+  margin: 40px auto;
+  padding: 25px;
+  border-radius: 14px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+  text-align: left;
+}
+
+label {
+  font-weight: bold;
+  margin-top: 10px;
+  display: block;
+  color: #004f7a;
+}
+
+input, select {
+  width: 100%;
+  padding: 12px;
+  border: 2px solid #90caff;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  font-size: 15px;
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  background: #0077cc;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #005fa3;
+}
+
+/* FOOTER */
+footer {
+  margin-top: 40px;
+  padding: 20px;
+  color: #005a88;
+}

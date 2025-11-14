@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Form Lanjutan</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="form-card">
+  <h2>Form Lanjutan</h2>
+
+  <label>Nama (otomatis):</label>
+  <input type="text" id="nama_auto" disabled>
+
+  <label>Email:</label>
+  <input type="email" id="email" placeholder="Masukkan email">
+
+  <label>Telepon:</label>
+  <input type="text" id="telepon" placeholder="Masukkan nomor telepon">
+
+  <label>Alamat:</label>
+  <input type="text" id="alamat" placeholder="Masukkan alamat">
+
+  <label>Gender:</label>
+  <select id="gender">
+    <option value="">-- Pilih --</option>
+    <option value="Laki-laki">Laki-laki</option>
+    <option value="Perempuan">Perempuan</option>
+  </select>
+
+  <button onclick="kirim()">Kirim</button>
+</div>
+
+<script src="app.js"></script>
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  document.getElementById("nama_auto").value = sessionStorage.getItem("nama");
+});
+</script>
+
+</body>
+</html>
